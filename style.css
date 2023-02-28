@@ -1,0 +1,44 @@
+body {
+    background-color: darkred;
+}
+
+.white-keys kbd {
+    margin: 0;
+    display: inline-block;
+    border: solid 3px black;
+    background-color: white;
+    width: 3vw;
+    height: 10vh;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+.black-keys {
+    position: absolute;
+    top: 0;
+    left: 1.1vw;
+}
+
+.black-keys kbd {
+    margin-left: 1.1vw;
+    display: inline-block;
+    border: solid 3px black;
+    background-color: black;
+    color: white;
+    width: 2vw;
+    height: 10vh;
+    text-align: center;
+    padding-top: 15vh;
+    z-index: 1;
+}
+
+.black-keys kbd:nth-child(3) {
+    margin-left: 4vw;
+}
+
+.container {
+    height: 42vh;
+    width: 24vw;
+    margin: auto;
+    transform: translateY(27vh);
+}
