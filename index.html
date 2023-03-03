@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <header>
-        <h1 title="G'raha Tia, Scion">G'raha Tia,<br> Scion of the Seventh Dawn</h1>
+        <h1 title="G'raha Tia, Scion of the Seventh Dawn">G'raha Tia,<br> Scion of the Seventh Dawn</h1>
         <nav>
+            <div class="hamburger" id="hamburger-container" onclick="hamburger(this)">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
             <ul>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -29,12 +35,24 @@
         <h2>Portfolio</h2>
         <div id="portfolio-container">
             <figure class="portfolio-item">
+                <dialog class="window">
+                    <h2 class="window-title">The Crystal Tower</h2>
+                    <p class="window-short">Found in Mor Dhona</p>
+                    <p class="window-description">I explored the Crystal Tower with the warrior of light and ended up learning all its secrets.</p>
+                    <form method="dialog"><button>Close</button></form>
+                </dialog>
                 <img decoding="async" width="400" height="225" src="assets/Crystal_tower_outside1.jpg" alt="Crystal Tower">
-                <figcaption>The Crystal Tower</figcaption>
+                <figcaption><button type="button" class="open-window">The Crystal Tower</button></figcaption>
             </figure>
             <figure class="portfolio-item">
+                <dialog class="window">
+                    <h2 class="window-title">The Crystarium</h2>
+                    <p class="window-short">Found in the first</p>
+                    <p class="window-description">I created this city to help keep the survivors on the first safe from harm.</p>
+                    <form method="dialog"><button>Close</button></form>
+                </dialog>
                 <img decoding="async" width="400" height="225" src="assets/crystarium.jpg" alt="The Crystarium">
-                <figcaption>The Crystarium</figcaption>
+                <figcaption><button type="button" class="open-window">The Crystarium</button></figcaption>
             </figure>
         </div>
     </section>
