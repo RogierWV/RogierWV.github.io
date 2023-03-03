@@ -76,6 +76,7 @@ section {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 
 #portfolio-container img {
