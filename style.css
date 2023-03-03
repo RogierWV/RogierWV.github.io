@@ -72,10 +72,12 @@ section {
 }
 
 #portfolio-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #portfolio-container img {
