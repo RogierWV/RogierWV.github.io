@@ -4,4 +4,4 @@
 
 layout: home
 ---
-This site will host additional projects and ideas.
+This site will host additional projects and ideas. Subjects may include things other than software engineering such as guitar equipment.
